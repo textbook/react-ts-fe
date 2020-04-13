@@ -1,0 +1,9 @@
+---
+applications:
+  - name: react-ts-fe
+    buildpacks:
+      - staticfile_buildpack
+    stack: cflinuxfs3
+    disk_quota: 16M
+    memory: 32M
+    path: dist/
