@@ -7,7 +7,7 @@
     "prebuild": "rimraf dist/",
     "build": "webpack --config webpack/prod.config.ts",
     "deploy:cf": "npm run build && cf push",
-    "deploy:heroku": "npm run build && ./bin/prepare-heroku.sh && git push heroku master",
+    "deploy:heroku": "git push heroku master",
     "deploy:netlify": "npm run build && netlify deploy --prod --dir ./dist",
     "dev": "webpack-dev-server --config webpack/dev.config.ts",
     "lint": "eslint . --ext=.js,.jsx,.ts,.tsx",

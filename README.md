@@ -26,18 +26,34 @@ Webpack configuration, found in the `webpack/` directory.
 The following scripts are provided to support the developer experience:
 
 - `npm run build`: Create the production build in `dist/`
+
 - `npm run deploy:cf`: Create the production build and deploy it to Cloud
     Foundry. Assumes you have the [CF CLI] installed and that you're logged in
     to the appropriate foundation/org/space.
+
 - `npm run deploy:heroku`: Create the production build and deploy it to
     Heroku. Assumes you have the [Heroku CLI] installed and you've created the
     app you want to deploy to (run `heroku create --help` for guidance).
+
+    **Note**: you will also need to set the appropriate buildpacks:
+
+    - `heroku/nodejs`: Node buildpack that builds the app
+    - `https://github.com/heroku/heroku-buildpack-static`: Nginx buildpack that
+        serves the result
+
+    you can run `bin/prepare-heroku.sh` to do this for you.
+
 - `npm run deploy:netlify`: Create the production build and deploy it to
     Netlify. Assumes you have the [Netlify CLI] installed.
+
 - `npm run dev`: Start the Webpack dev server locally
+
 - `npm run lint`: Lint the code using ESLint
+
 - `npm run ship`: Lint and test the code
+
 - `npm run test`: Test the code using Jest
+
 - `npm run test:dev`: Ensure the dev mode can start up correctly
 
 Note all deployments enable push-state routing, for use with e.g. React
