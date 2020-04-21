@@ -12,7 +12,7 @@ Netlify.
 It was extracted from the TypeScript branch of my existing full-stack starter
 kit: https://github.com/textbook/starter-kit/tree/typescript.
 
-## How do I use it?
+## How do I use it?
 
 For the most part you should just be able to write your code and tests in the
 `src/` directory. Imports of `.css` or `.scss` style files are handled
