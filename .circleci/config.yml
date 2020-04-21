@@ -25,6 +25,9 @@ jobs:
       - run:
           name: Test Dev Mode
           command: npm run test:dev
+      - run:
+          name: Build
+          command: npm run build
 workflows:
   version: 2
   build:

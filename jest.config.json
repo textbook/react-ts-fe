@@ -5,6 +5,7 @@
     }
   },
   "moduleNameMapper": {
+    "\\.(jpe?g|png|gif|svg)$": "<rootDir>/package.json",
     "\\.(s?css)$": "identity-obj-proxy"
   },
   "preset": "ts-jest",

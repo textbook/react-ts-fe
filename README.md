@@ -17,9 +17,10 @@ kit: https://github.com/textbook/starter-kit/tree/typescript.
 ## How do I use it?
 
 For the most part you should just be able to write your code and tests in the
-`src/` directory. Imports of `.css` or `.scss` style files are handled
-appropriately, for anything else (e.g. images) you will need to extend the
-Webpack configuration, found in the `webpack/` directory.
+`src/` directory. Imports of `.css` or `.scss` style files and various image
+types are handled appropriately, for anything else you will need to extend the
+Webpack configuration, found in the `webpack/` directory, and probably
+`src/global.d.ts`.
 
 ### Scripts
 

@@ -14,6 +14,10 @@ export default {
 				loader: "ts-loader",
 			},
 			{
+				test: /\.(png|svg|jpe?g|gif)$/,
+				loader: "file-loader",
+			},
+			{
 				test: /\.css$/,
 				use: ["style-loader", "css-loader"],
 			},
