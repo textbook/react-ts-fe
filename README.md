@@ -1,5 +1,7 @@
 # React-TS-FE
 
+[![CircleCI](https://circleci.com/gh/textbook/react-ts-fe.svg?style=svg)](https://circleci.com/gh/textbook/react-ts-fe)
+
 Bootstrap for a React TypeScript front-end.
 
 ## What is this?
