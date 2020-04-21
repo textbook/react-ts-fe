@@ -53,7 +53,7 @@
     "html-webpack-plugin": "^4.2.0",
     "html-webpack-tags-plugin": "^2.0.17",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.3.0",
+    "jest": "^25.4.0",
     "jest-circus": "^25.3.0",
     "node-sass": "^4.13.1",
     "react": "16.13.1",
