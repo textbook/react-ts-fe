@@ -22,6 +22,8 @@ jobs:
       - run:
           name: Unit Test
           command: npm test
+      - store_test_results:
+          path: reports
       - run:
           name: Test Dev Mode
           command: npm run test:dev

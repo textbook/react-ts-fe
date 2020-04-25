@@ -9,6 +9,10 @@
     "\\.(s?css)$": "identity-obj-proxy"
   },
   "preset": "ts-jest",
+  "reporters": [
+    "default",
+    ["jest-junit", { "outputDirectory": "./reports/jest" }]
+  ],
   "setupFilesAfterEnv": [
     "<rootDir>/setupTests.ts"
   ],
