@@ -1,0 +1,6 @@
+.circleci/
+.netlify/
+bin/
+dist/
+node_modules/
+reports/

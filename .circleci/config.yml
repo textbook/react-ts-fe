@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:erbium
     steps:
       - checkout
+      - setup_remote_docker
       - restore_cache:
           keys:
             - node-deps-{{ checksum "package-lock.json" }}
@@ -30,6 +31,9 @@ jobs:
       - run:
           name: Build
           command: npm run build
+      - run:
+          name: Docker Build
+          command: docker build .
 workflows:
   version: 2
   build:

@@ -12,5 +12,9 @@
     "strict": true,
     "target": "es5",
     "types": []
-  }
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
 }

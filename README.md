@@ -8,8 +8,8 @@ Bootstrap for a React TypeScript front-end.
 
 It's a bootstrap starter project to get up and running with a minimal React
 front-end using TypeScript. It's an alternative to `create-react-app`, with
-no hidden/magic configuration, and easy deployment to Cloud Foundry, Heroku or
-Netlify.
+no hidden/magic configuration, and easy deployment to Cloud Foundry, Heroku,
+Netlify or anywhere you can run a Docker container.
 
 It was extracted from the TypeScript branch of my existing full-stack starter
 kit: https://github.com/textbook/starter-kit/tree/typescript.
@@ -60,6 +60,17 @@ The following scripts are provided to support the developer experience:
 Note all deployments enable push-state routing, for use with e.g. React
 Router, and force HTTPS.
 
+### Docker
+
+Assuming you have [Docker] installed, you can run the following commands to
+build and start a container locally at http://localhost:8080:
+
+```bash
+docker build . -t react-ts-fe
+docker run -p 8080:80 react-ts-fe
+```
+
 [CF CLI]: https://docs.cloudfoundry.org/cf-cli/install-go-cli.html
+[Docker]: https://docs.docker.com/get-docker/
 [Heroku CLI]: https://devcenter.heroku.com/articles/heroku-cli
 [Netlify CLI]: https://docs.netlify.com/cli/get-started/
