@@ -5,7 +5,7 @@ import reactLogo from "./logo.svg";
 
 const App: FC = () => (
 	<>
-		<div className="welcome">Hello world</div>
+		<div className="welcome" data-testid="welcome-message">Hello world</div>
 		<img src={reactLogo} alt="React Logo" />
 	</>
 );

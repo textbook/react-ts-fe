@@ -11,7 +11,7 @@
   "preset": "ts-jest",
   "reporters": [
     "default",
-    ["jest-junit", { "outputDirectory": "./reports/jest" }]
+    ["jest-junit", { "outputDirectory": "./reports/unit" }]
   ],
   "setupFilesAfterEnv": [
     "<rootDir>/setupTests.ts"

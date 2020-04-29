@@ -5,7 +5,7 @@ import App from "./App";
 
 describe("App", () => {
 	it("renders", () => {
-		const { baseElement } = render(<App />);
-		expect(baseElement).toHaveTextContent("Hello world");
+		const { getByTestId } = render(<App />);
+		expect(getByTestId("welcome-message")).toHaveTextContent("Hello world");
 	});
 });
