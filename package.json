@@ -16,9 +16,8 @@
     "e2e:run": "cross-env JEST_JUNIT_OUTPUT_DIR=reports/e2e jest --testEnvironment node --testRegex e2e-spec\\.ts --testTimeout=30000",
     "lint": "eslint . --ext=.js,.jsx,.ts,.tsx",
     "selenium": "webdriver-manager start",
-    "ship": "npm run lint && npm run test && npm run test:dev",
-    "test": "jest",
-    "test:dev": "concurrently -k -s first -n \"up?,dev\" \"wait-on tcp:3000\" \"npm run dev\""
+    "ship": "npm run lint && npm run test && npm run e2e",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

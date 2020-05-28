@@ -24,9 +24,6 @@ jobs:
           name: Unit Test
           command: npm test
       - run:
-          name: Test Dev Mode
-          command: npm run test:dev
-      - run:
           name: Build
           command: npm run build
       - run:

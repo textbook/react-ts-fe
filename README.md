@@ -55,7 +55,7 @@ The following scripts are provided to support the developer experience:
 
 - `npm run test`: Test the code using Jest
 
-- `npm run test:dev`: Ensure the dev mode can start up correctly
+- `npm run e2e`: Start up the app in dev mode and test it with [WebdriverIO]
 
 Note all deployments enable push-state routing, for use with e.g. React
 Router, and force HTTPS.
@@ -74,3 +74,4 @@ docker run -p 8080:80 react-ts-fe
 [Docker]: https://docs.docker.com/get-docker/
 [Heroku CLI]: https://devcenter.heroku.com/articles/heroku-cli
 [Netlify CLI]: https://docs.netlify.com/cli/get-started/
+[WebdriverIO]: https://webdriver.io/
