@@ -31,8 +31,10 @@ export default {
 		new HtmlWebpackPlugin({
 			template: "./src/index.html",
 		}),
-		new CopyPlugin([
-			{ from: "Staticfile" },
-		]),
+		new CopyPlugin({
+			patterns: [
+				{ from: "Staticfile" },
+			],
+		}),
 	],
 };
