@@ -5,6 +5,7 @@ COPY ./package-lock.json .
 
 RUN npm ci
 
+COPY ./Staticfile .
 COPY ./tsconfig.json .
 COPY ./src /src
 COPY ./webpack /webpack
