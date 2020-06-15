@@ -35,7 +35,7 @@
   "homepage": "https://github.com/textbook/react-ts-fe#readme",
   "devDependencies": {
     "@codeyourfuture/eslint-config-standard": "^2.0.1",
-    "@testing-library/jest-dom": "^5.10.0",
+    "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^10.2.1",
     "@types/copy-webpack-plugin": "^6.0.0",
     "@types/html-webpack-plugin": "^3.2.3",
