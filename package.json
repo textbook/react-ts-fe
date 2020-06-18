@@ -7,7 +7,7 @@
     "prebuild": "rimraf dist/",
     "build": "webpack --config webpack/prod.config.ts",
     "deploy:cf": "npm run build && cf push",
-    "deploy:heroku": "git push heroku master",
+    "deploy:heroku": "git push heroku main",
     "deploy:netlify": "npm run build && netlify deploy --prod --dir ./dist",
     "dev": "webpack-dev-server --config webpack/dev.config.ts",
     "pree2e": "webdriver-manager update --gecko false",
