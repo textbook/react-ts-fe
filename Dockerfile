@@ -3,7 +3,7 @@ FROM node:erbium-alpine AS build
 COPY ./package.json .
 COPY ./package-lock.json .
 
-RUN npm ci
+RUN npm ci --only=prod
 
 COPY ./Staticfile .
 COPY ./tsconfig.json .

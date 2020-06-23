@@ -22,6 +22,16 @@ types are handled appropriately, for anything else you will need to extend the
 Webpack configuration, found in the `webpack/` directory, and probably
 `src/global.d.ts`.
 
+### Dependencies
+
+To make the Docker build as efficient as possible, install any dependencies
+_not_ required for the Webpack build as development dependencies, e.g.:
+
+```bash
+npm install react  # production dependency
+npm install jest --save-dev  # development dependency
+```
+
 ### Scripts
 
 The following scripts are provided to support the developer experience:
