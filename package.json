@@ -75,7 +75,7 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.5.4",
-    "jest-circus": "^26.0.1",
+    "jest-circus": "^26.1.0",
     "jest-junit": "^11.0.1",
     "ts-jest": "^25.5.1",
     "wait-on": "^5.0.1",
