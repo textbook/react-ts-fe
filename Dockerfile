@@ -1,19 +1,20 @@
 FROM node:erbium-alpine AS build
 
-COPY ./package.json .
-COPY ./package-lock.json .
+WORKDIR /home/node
+
+COPY ./package*.json ./
 
 RUN npm ci --only=prod
 
 COPY ./Staticfile .
 COPY ./tsconfig.json .
-COPY ./src /src
-COPY ./webpack /webpack
+COPY ./src ./src
+COPY ./webpack ./webpack
 
 RUN npm run build
 
 FROM nginx:stable-alpine
 
-COPY --from=build ./dist /usr/share/nginx/html
+COPY --from=build /home/node/dist /usr/share/nginx/html
 
 COPY ./default.conf /etc/nginx/conf.d
