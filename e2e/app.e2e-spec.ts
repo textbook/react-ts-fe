@@ -1,11 +1,13 @@
 import { BrowserObject, remote, RemoteOptions } from "webdriverio";
 
 const config: RemoteOptions = {
-	baseUrl: "http://localhost:3000",
+	baseUrl: process.env.BASE_URL || "http://localhost:3000",
 	capabilities: {
 		browserName: "chrome",
 	},
+	hostname: process.env.SELENIUM_HOST || "localhost",
 	logLevel: "warn",
+	path: "/wd/hub",
 };
 
 const testId = (selector: string): string => `[data-testid="${selector}"]`;

@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  fe:
+    build: .
+    image: textbook/react-ts-fe
+  selenium:
+    image: selenium/standalone-chrome
+    links:
+      - fe
+  e2e:
+    build:
+      context: .
+      dockerfile: e2e/Dockerfile
+    environment:
+      BASE_URL: http://fe
+      SELENIUM_HOST: selenium
+    links:
+      - fe
+      - selenium

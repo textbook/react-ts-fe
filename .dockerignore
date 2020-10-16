@@ -2,6 +2,5 @@
 .netlify/
 bin/
 dist/
-e2e/
 node_modules/
 reports/
