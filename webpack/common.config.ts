@@ -1,7 +1,8 @@
 import CopyPlugin from "copy-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import { Configuration } from "webpack";
 
-export default {
+const configuration: Configuration = {
 	resolve: {
 		extensions: [".js", ".jsx", ".ts", ".tsx"],
 	},
@@ -38,3 +39,5 @@ export default {
 		}),
 	],
 };
+
+export default configuration;
