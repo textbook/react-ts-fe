@@ -12,7 +12,9 @@
     "resolveJsonModule": true,
     "strict": true,
     "target": "es5",
-    "types": []
+    "types": [
+      "node"
+    ]
   },
   "exclude": [
     "**/*.test.ts",
