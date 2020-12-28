@@ -79,7 +79,7 @@
     "jest-circus": "^26.6.3",
     "jest-junit": "^12.0.0",
     "ts-jest": "^25.5.1",
-    "wait-on": "^5.2.0",
+    "wait-on": "^5.2.1",
     "webdriver-manager": "^12.1.7",
     "webdriverio": "^6.10.11"
   }
