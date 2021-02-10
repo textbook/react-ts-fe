@@ -81,6 +81,6 @@
     "ts-jest": "^25.5.1",
     "wait-on": "^5.2.1",
     "webdriver-manager": "^12.1.8",
-    "webdriverio": "^6.12.1"
+    "webdriverio": "^7.0.1"
   }
 }
