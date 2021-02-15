@@ -1,4 +1,4 @@
-import { BrowserObject, remote, RemoteOptions } from "webdriverio";
+import { Browser, remote, RemoteOptions } from "webdriverio";
 
 const config: RemoteOptions = {
 	baseUrl: process.env.BASE_URL || "http://localhost:3000",
@@ -13,7 +13,7 @@ const config: RemoteOptions = {
 const testId = (selector: string): string => `[data-testid="${selector}"]`;
 
 describe("app", () => {
-	let browser: BrowserObject;
+	let browser: Browser<"async">;
 
 	beforeAll(async () => {
 		browser = await remote(config);

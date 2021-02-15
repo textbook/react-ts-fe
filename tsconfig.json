@@ -17,6 +17,8 @@
     ]
   },
   "exclude": [
+    "e2e/",
+    "node_modules/",
     "**/*.test.ts",
     "**/*.test.tsx"
   ]
