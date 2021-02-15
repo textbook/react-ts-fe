@@ -8,4 +8,5 @@ export default merge(common, {
 	devServer: {
 		port: 3000,
 	},
+	mode: "development",
 });
