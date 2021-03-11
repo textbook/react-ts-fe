@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 import "./App.scss";
 import reactLogo from "./logo.svg";
