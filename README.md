@@ -1,3 +1,7 @@
+> **Note** this is no longer actively maintained, but it does show how
+> [the base repo](https://github.com/textbook/starter-kit) can be adapted to
+> TypeScript and frontend-only usage.
+
 # React-TS-FE
 
 [![CircleCI](https://circleci.com/gh/textbook/react-ts-fe.svg?style=svg)](https://circleci.com/gh/textbook/react-ts-fe)
